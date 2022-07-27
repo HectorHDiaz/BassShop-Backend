@@ -1,0 +1,38 @@
+[2022-07-26T19:43:56.054] [ERROR] error - Error: Getting the User. Error: Wrong username or password
+    at UserServices.getUserByEmailService (C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\services\user.services.js:54:13)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Strategy._verify (C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\middlewares\passport.js:15:21)
+[2022-07-26T19:45:52.261] [ERROR] error - Error: req#logout requires a callback function
+    at IncomingMessage.req.logout.req.logOut (C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\node_modules\passport\lib\http\request.js:65:44)
+    at C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\routers\indexRoutes.js:47:9
+    at Layer.handle [as handle_request] (C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+[2022-07-26T19:51:02.974] [ERROR] error - Error: req#logout requires a callback function
+    at IncomingMessage.req.logout.req.logOut (C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\node_modules\passport\lib\http\request.js:65:44)
+    at C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\routers\indexRoutes.js:47:9
+    at Layer.handle [as handle_request] (C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+[2022-07-26T20:00:54.673] [ERROR] error - Error: Usuario ya existente!
+    at Strategy._verify (C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\middlewares\passport.js:35:15)
+    at Strategy.authenticate (C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at Layer.handle [as handle_request] (C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\node_modules\express\lib\router\route.js:144:13)
+    at done (C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\node_modules\multer\lib\make-middleware.js:49:68)
+    at C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\node_modules\multer\lib\make-middleware.js:155:11
+    at WriteStream.<anonymous> (C:\Users\atono.DESKTOP-7MFGR78\Desktop\ProyectoFinal\node_modules\multer\storage\disk.js:43:9)

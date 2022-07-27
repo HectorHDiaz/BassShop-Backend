@@ -1,0 +1,33 @@
+
+<div class="page-error">
+      <div class="alert alert-info">
+        <h1>External Configs</h1>
+        <ul>
+          <li>
+            <p>Puerto: {{config.PORT}}</p>
+          </li>
+          <li>
+            <p>Base de Datos: {{config.DB_URL}}</p>
+          </li>
+          <li>
+            <p>Mail Admin: {{config.ADMIN_EMAIL}}</p>
+          </li>
+          <li>
+            <p>Ambiente: {{ config.NODE_ENV }}</p>
+          </li>
+          <li>
+            <p>Modo de Procesador: {{ config.MODE }}</p>
+          </li>
+          <li>
+            <p>Origen de datos: {{ config.DATA_SOURCE }}</p>
+          </li>
+          <li>
+            <p>Usuario en Sesión: {{ sessionUser }}</p>
+          </li>
+          <li>
+            <p>Tiempo de Sesion hasta: {{ sessionTime }}</p>
+          </li>
+        </ul>
+        <a href="/" class="btn btn-warning">Volver</a>
+      </div>
+    </div>

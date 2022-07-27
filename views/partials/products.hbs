@@ -1,0 +1,24 @@
+
+<h3 style="margin-top: 2em;">Productos</h3>
+    {{#if allProducts.length}}
+    <div id="tableContainer">
+        <table class="table table-dark" id="productTable">
+            <tr class="text-warning">
+                <th>Titulo</th>
+                <th>Precio</th>
+                <th>Imagen</th>
+            </tr>
+                {{#each allProducts}}
+                <tr>
+                    <td>{{name}}</td>
+                    <td>{{price}}</td>
+                    <td><img style="width: 100px;" src={{image}} alt={{name}}> </td>
+                    <td><button onclick="return addToCart('{{_id}}', '{{../sessionCart._id}}')">Agregar</button></td>
+                </tr>
+                {{/each}}
+        </table>
+    </div>
+    {{/if}}
+    {{#unless allProducts.length}}
+    <h3 class="alert alert-danger">No se encuentran datos.</h3>
+    {{/unless}}

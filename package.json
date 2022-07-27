@@ -1,0 +1,39 @@
+{
+  "name": "proyectofinal",
+  "version": "14.0.0",
+  "description": "Proyecto Final Backend - Aprobar por favorr",
+  "main": "index.js",
+  "scripts": {
+    "start": "set NODE_ENV=production && node index.js",
+    "start-dev": "set NODE_ENV=development && node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bootstrap": "^5.2.0",
+    "connect-mongo": "^4.6.0",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "fs": "^0.0.1-security",
+    "handlebars": "^4.7.7",
+    "hbs": "^4.2.0",
+    "jquery": "^3.6.0",
+    "log4js": "^6.6.1",
+    "mongodb": "^4.8.1",
+    "mongoose": "^6.4.7",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.7.7",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "pug": "^3.0.2",
+    "socket.io": "^4.5.1",
+    "twilio": "^3.80.0",
+    "uuid": "^8.3.2",
+    "yup": "^0.32.11"
+  }
+}

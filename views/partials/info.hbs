@@ -1,0 +1,32 @@
+    <div class="page-error">
+      <div class="alert alert-info">
+        <h1 class="title">INFO</h1>
+        <ul>
+          <li>
+            <p>Argumentos de entrada: {{{ info.inputArguments }}}</p>
+          </li>
+          <li>
+            <p>Cantidad de CPU's: {{{ info.cpuNumber }}}</p>
+          </li>
+          <li>
+            <p>Nombre de la plataforma (sistema operativo): {{{ info.platformName }}}</p>
+          </li>
+          <li>
+            <p>Versión de node.js: {{ info.versionNode }}</p>
+          </li>
+          <li>
+            <p>Memoria total reservada (rss): {{ info.rss }}</p>
+          </li>
+          <li>
+            <p>Path de ejecución: {{ info.path }}</p>
+          </li>
+          <li>
+            <p>Process id: {{ info.processId }}</p>
+          </li>
+          <li>
+            <p>Carpeta del proyecto: {{ info.projectFolder }}</p>
+          </li>
+        </ul>
+        <a href="/" class="btn btn-warning">Volver</a>
+      </div>
+    </div>

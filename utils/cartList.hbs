@@ -1,0 +1,24 @@
+<h3>Productos vendidos:</h3>
+<div>
+  <h3>Comprador:</h3>
+  <p>Nombre: {{user.name}}</p>
+  <p>Email: {{user.email}}</p>
+  <p>Direccion: {{user.address}}</p>
+  <hr>
+  <table>
+    <tr>
+      <th>Titulo</th>
+      <th>Cantidad</th>
+      <th>Precio</th>
+      <th>Total</th>
+    </tr>
+    {{#each purchase.items}}
+    <tr>
+      <td>{{name}}</td>
+      <td>{{quantity}}</td>
+      <td>{{price}}</td>
+    {{/each}}
+      <td>{{purchase.total}}</td>
+    </tr>
+  </table>
+</div>
