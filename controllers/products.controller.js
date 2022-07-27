@@ -33,7 +33,6 @@ class ProductsController {
   getProductsByCategory = async (req, res, next) => {
     try {
       const category = req.params.category;
-      console.log(category)
       const searchedProduct = await this.productsService.getProductsByCategoryService(category)
       return searchedProduct;
     } catch (error) {

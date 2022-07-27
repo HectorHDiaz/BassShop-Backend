@@ -30,7 +30,6 @@ passport.use("register", new LocalStrategy(
   { passReqToCallback: true },
   async (req, username, password, done) => {
     try {
-      console.log(username)
       const usrObject = {
         email: username,
         password: createHash(password),
@@ -38,7 +37,6 @@ passport.use("register", new LocalStrategy(
         phone: req.body.phone,
         address: req.body.address
       };
-      console.log(usrObject)
       const newUser = await userServices.createUserService(usrObject)
       return done(null, newUser);
     }

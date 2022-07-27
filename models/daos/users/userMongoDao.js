@@ -69,9 +69,6 @@ class UserMongoDAO {
       throw error
     }
   }
-  async connect() {
-    console.log('Una conexión')
-  }
   async deleteUserById(id) {
     try {
       const document = await this._collection.deleteOne({ _id: id });
