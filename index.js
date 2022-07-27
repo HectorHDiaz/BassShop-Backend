@@ -75,7 +75,7 @@ function allServer() {
 
   //Inicio de Server
   httpServer.listen(config.PORT, () => {
-    mongoose.connect(config.mongodb.connectTo('ProyectoFinal'))
+    mongoose.connect(config.mongodb.connectTo(config.DATABASE))
       .then(() => {
         infoLogger.info('Connected to DB!');
         consoleLogger.info('Server is up and running on port:', config.PORT);

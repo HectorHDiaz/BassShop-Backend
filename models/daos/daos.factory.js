@@ -1,3 +1,4 @@
+const config = require('../../config/config');
 const MongoDBClient = require('../../db/clients/mongo/mongo.client');
 const CartMemDAO = require('./cart/CartMemDao'),
   ProductMemDAO = require('./products/ProductsMemDao'),
@@ -27,11 +28,11 @@ class DAOSFactory {
         userDao = new UserMemDAO();
         break;
       case 'mongo':
-        cartsDao = new CartMongoDAO('ProyectoFinal', await MongoDBClient.getConnection());
-        productsDao = new ProductMongoDAO('ProyectoFinal', await MongoDBClient.getConnection());
-        messageDao = new MessagesMongoDAO('ProyectoFinal', await MongoDBClient.getConnection());
-        purchaseDao = new PurchasesMongoDAO('ProyectoFinal', await MongoDBClient.getConnection());
-        userDao = new UserMongoDAO('ProyectoFinal', await MongoDBClient.getConnection());
+        cartsDao = new CartMongoDAO(config.DATABASE, await MongoDBClient.getConnection());
+        productsDao = new ProductMongoDAO(config.DATABASE, await MongoDBClient.getConnection());
+        messageDao = new MessagesMongoDAO(config.DATABASE, await MongoDBClient.getConnection());
+        purchaseDao = new PurchasesMongoDAO(config.DATABASE, await MongoDBClient.getConnection());
+        userDao = new UserMongoDAO(config.DATABASE, await MongoDBClient.getConnection());
         break;
       default:
         throw new Error('Solo está configurado el modo: Mongo(PRD) y Mem(DEV).');
