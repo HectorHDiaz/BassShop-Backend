@@ -1,7 +1,7 @@
-# BackendProyectoFinal
+# Bass Shop - Backend NodeJS
 El proyecto final para el curso de Programacion Backend de Coderhouse.
 Un eCommerce de Basses donde hace falta loguearse/registrarse, se agregan basses al carrito y llega por mail la informacion de la compra.
-Lo importante de este proyecto es el backend en el cual se usó:
+Para su desarrollo se usaron las siguientes tecnologías:
 - Express
 - Passport
 - MongoDB
